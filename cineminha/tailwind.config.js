@@ -7,7 +7,9 @@ export default {
   theme: {
     extend: {
       colors: {
-        'primary-raul': `#735ABC` 
+        'bgHeader': `#FABE3B`,
+        'colorTxt': `#2B2B2B`,
+        'colorTitle': `#ffffff` 
       }
     },
   },
