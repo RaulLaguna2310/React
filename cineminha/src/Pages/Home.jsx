@@ -4,7 +4,7 @@ function Home() {
     return ( 
         <>
         <main>
-            <div className="grid grid-cols-3 gap-4 mt-8 ml-48">
+            <div className="grid grid-cols-3 gap-4 mt-8">
             {data.map((filme,index) =>(
                 <div className='card mx-5 gap-3' key={index}>
                     <h1 className='text-xl font-medium mb-4'>{filme.title}</h1>
@@ -16,7 +16,7 @@ function Home() {
                         ))}
                     </div>
 
-                    <div className='text text-black border-solid border-2 mb-7 text-justify'>
+                    <div className='text text-black mb-7 text-justify'>
                         {filme.text.map(text => (
                             <span key={text} className='colorTxt'>{text}</span>
                         ))}
@@ -26,7 +26,6 @@ function Home() {
             </div>
             </main>
         </>
-         
      );
 }
 export default Home;
