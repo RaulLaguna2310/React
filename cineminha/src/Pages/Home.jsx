@@ -16,7 +16,7 @@ function Home() {
                         ))}
                     </div>
 
-                    <div className='text text-black mb-7 text-justify'>
+                    <div className='text text-black mb-7 text-justify max-w-80'>
                         {filme.text.map(text => (
                             <span key={text} className='colorTxt'>{text}</span>
                         ))}
