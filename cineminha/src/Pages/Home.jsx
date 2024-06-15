@@ -1,9 +1,21 @@
 import data from '../../artigos.json'
+import Carrossel from '../Componentes/Carrossel/Carrossel';
+import { Link } from "react-router-dom"
 
 function Home() {
     return ( 
         <>
         <main>
+            <div className='bg-color_roxo2 py-1 mt-6 rounded-r-lg'>
+            <div className='flex flex-row mt-10 ml-10'>
+                <h2 className='font-bold text-color_preto text-2xl mr-4'>Notícias</h2>
+                <Link to="noticias">
+                <button className='text-color_branco bg-color_roxo1 rounded-lg py-2 px-4 hover:underline hover:font-bold '>Ver Mais</button>
+                </Link>
+            </div>
+            <Carrossel/>
+            </div>
+
             <div className="grid grid-cols-3 gap-4 mt-8">
             {data.map((filme,index) =>(
                 <div className='card mx-5 gap-3' key={index}>
