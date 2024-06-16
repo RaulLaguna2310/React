@@ -8,7 +8,7 @@ const Carrossel_01 = () => {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 5,
+    slidesToShow: 6,
     slidesToScroll: 1,
     centerMode: true,
     swipeToSlide: true,
@@ -19,14 +19,16 @@ const Carrossel_01 = () => {
     "ctz_centraldeinteligencia.png",
     "ctz_donzela.png",
     "ctz_planetadosmacacos.png",
-    "ctz_semescalas.png"
+    "ctz_semescalas.png",
+    "ctz_mascara.png",
+    "ctz_duna.png"
   ];
 
   return (
     <div className="container mx-auto mt-6">
       <Slider {...settings}>
         {images.map((image, index) => (
-          <div key={index} className="p-6">
+          <div key={index} className="p-4">
             <img src={image} alt={`Slide ${index}`} className="w-48 h-72 rounded-lg"/>
           </div>
         ))}

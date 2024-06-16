@@ -1,13 +1,13 @@
 import Header from "./Componentes/Header/Header";
-import { Outlet } from "react-router-dom"
 import NavBar from "./Componentes/NavBar/NavBar";
-import Switch from "./Componentes/Switch/Switch";
+import Footer from "./Componentes/Footer/Footer";
+import { Outlet } from "react-router-dom"
 
 function App() {
   return (
     <>
-      <Header/>
-      <NavBar/>
+      <Header />
+      <NavBar />
       <Outlet/>
     </>
   )
