@@ -2,15 +2,15 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
-import { createBrowserRouter, Route, RouterProvider } from 'react-router-dom'
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import PageNotFound from './Pages/PageNotFound.jsx'
 import Contato from './Pages/Contato.jsx'
 import Sobre from './Pages/Sobre.jsx'
 import Filmes from './Pages/Filmes.jsx'
 import Home from './Pages/Home.jsx'
-import PaginaFilmes from './Pages/PaginaFilme.jsx'
 import Favoritos from './Pages/Favoritos.jsx'
 import Noticias from './Pages/Noticias.jsx'
+import DetalhesFilme from './Pages/DetalhesFilme.jsx'
 
 const router = createBrowserRouter(
   [
@@ -20,7 +20,7 @@ const router = createBrowserRouter(
       children: [
         {index: true, element: <Home/> },
         {path: "filmes", element: <Filmes/>},
-        {path: "filmes/:id", element: <PaginaFilmes/>},
+        {path: "filmes/:id", element: <DetalhesFilme/>},
         {path: "sobre", element: <Sobre/>},
         {path: "contato", element: <Contato/>},
         {path: "favoritos", element: <Favoritos/>},

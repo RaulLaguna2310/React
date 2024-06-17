@@ -9,7 +9,7 @@ function Filmes() {
     const urlImg = 'https://image.tmdb.org/t/p/w342/'
 
 useEffect( () => {
-    fetch(`${urlBase}popular?${apiKey}`)
+    fetch(`${urlBase}upcoming?${apiKey}`)
     .then(response => response.json())
     .then(response => setFilmes(response.results))
     .catch(erro => console.log(erro))
@@ -24,7 +24,7 @@ useEffect( () => {
                 <div className="card-filme" key={filme.id}>
                 <img src={`${urlImg}${filme.poster_path}`}/>
                 <h1>{filme.title}</h1>
-                <Link to={`${filmes.id}`} className="text-purple-800">Saber Mais</Link>
+                <Link to={`${filme.id}`} className="text-purple-800">Saber Mais</Link>
                 </div>
             ))
         }
