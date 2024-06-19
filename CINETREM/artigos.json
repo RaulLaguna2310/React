@@ -1,33 +1,5 @@
 [
     {
-    "title": "Rogue One",
-    "image": "RogueOne.jpg",
-    "text": [
-    "A Aliança Rebelde recruta Jyn Erso para sua causa depois de saber que o Império está construindo uma arma poderosa chamada Estrela da Morte. Ela une forças com o capitão Cassian Andor e outros combatentes da resistência para roubar os planos da arma."
-    ],
-    "tags": ["Ação", "Ficção Científica"]
-    },
-
-    {
-    "title": "Kill Bill",
-    "image": "KillBill.jpg",
-    "text": [
-    "A ex-assassina conhecida apenas como Noiva acorda de um coma de quatro anos decidida a se vingar de Bill, seu ex-amante e chefe, que tentou matá-la no dia do casamento. Ela está motivada a acertar as contas com cada uma das pessoas envolvidas com a perda da filha, da festa de casamento e dos quatro anos de sua vida. Na jornada, a Noiva é submetida a dores físicas agonizantes ao enfrentar a inescrupulosa gangue de Bill, o Esquadrão Assassino de Víboras Mortais."
-    ],
-    "tags": ["Ação", "Thriller"]
-    },
-
-    {
-    "title": "Oppenheimer",
-    "image": "Oppenheimer.jpg",
-    "text": [
-    "O físico J. Robert Oppenheimer trabalha com uma equipe de cientistas durante o Projeto Manhattan, levando ao desenvolvimento da bomba atômica."
-    ],
-    "tags": ["Suspense", "Obre de Época"]
-    },
-
-
-    {
         "title": "Novidades no mundo do cinema",
         "image": "movie-deadpool.jpg",
         "text": [

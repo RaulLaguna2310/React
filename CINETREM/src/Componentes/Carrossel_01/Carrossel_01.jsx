@@ -28,7 +28,7 @@ const Carrossel_01 = () => {
       <Slider {...settings}>
         {images.map((image, index) => (
           <div key={index} className="p-4">
-            <img src={image} alt={`Slide ${index}`} className="w-48 h-72 rounded-lg"/>
+            <img src={image} alt={`Slide ${index}`} className="w-56 h-72 rounded-lg"/>
           </div>
         ))}
       </Slider>
