@@ -26,42 +26,37 @@ function Home() {
             </div>
 
             <div className="bg-color_roxo2 py-1 mt-6 rounded-r-lg">
-              <div className="flex flex-row mt-10 ml-10 mb-6">
+              <div className="flex flex-row mt-10 ml-10 mb-10">
                 <h2 className="font-bold text-color_preto text-2xl mr-4">
                   Notícias
                 </h2>
-                <Link to="noticias">
-                  <button className="text-color_branco bg-color_roxo1 rounded-lg py-2 px-4 hover:underline hover:font-semibold">
-                    Ver Mais
-                  </button>
-                </Link>
               </div>
               <Carrossel />
 
               <div>
-                <div className="grid grid-rows-1 gap-4 mt-14">
+                <div className="grid grid-cols-2 gap-4 mt-14 items-center">
                   {data.map((filme, index) => (
                     <div className="card mx-5 gap-3" key={index}>
-                      <h1 className="text-xl font-medium mb-4">
+                      <h1 className="text-xl font-medium mb-10 w-2/3">
                         {filme.title}
                       </h1>
                       <img
                         src={filme.image}
                         alt={filme.title}
-                        className="w-80"
+                        className="w-2/3"
                       />
 
                       <div className="tag flex space-x-10 mt-2 mb-4">
                         {filme.tags.map((tag) => (
-                          <span key={tag} className="colorTxt">
+                          <span key={tag} className="text-color_roxo1 font-semibold">
                             {tag}
                           </span>
                         ))}
                       </div>
 
-                      <div className="text text-black mb-7 text-justify max-w-80">
+                      <div className="text text-black mb-7 text-justify w-2/3">
                         {filme.text.map((text) => (
-                          <span key={text} className="colorTxt">
+                          <span key={text} className="text-color_preto text-sm">
                             {text}
                           </span>
                         ))}
