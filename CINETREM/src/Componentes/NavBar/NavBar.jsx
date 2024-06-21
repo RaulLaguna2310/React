@@ -6,6 +6,8 @@ function NavBar() {
             <ul className='flex gap-3 ml-8 text-color_preto font-medium text-lg space-x-5'>
                 <li className='hover:underline'><Link to = "/">Home</Link></li>
                 <li className='hover:underline'><Link to = "filmes">Filmes</Link></li>
+                <li className='hover:underline'><Link to="sobre">Sobre</Link></li>
+                <li className='hover:underline'><Link to="contato">Contato</Link></li>
             </ul>
         </nav>
      );

@@ -31,10 +31,10 @@ function Home() {
                   Notícias
                 </h2>
               </div>
-              <Carrossel />
+              <Carrossel/>
 
-              <div>
-                <div className="grid grid-cols-2 gap-4 mt-14 items-center">
+              
+                <div className="grid grid-cols-2 gap-4 mt-18 items-center">
                   {data.map((filme, index) => (
                     <div className="card mx-5 gap-3" key={index}>
                       <h1 className="text-xl font-medium mb-10 w-2/3">
@@ -64,12 +64,11 @@ function Home() {
                     </div>
                   ))}
                 </div>
-              </div>
             </div>
 
             <CardContato />
           </div>
-          <Footer />
+          <Footer/>
         </div>
       </main>
     </>
