@@ -7,7 +7,7 @@ function Contato() {
             <div className="flex flex-col min-h-screen">
                 <div className="flex-col">
                     <h1 className="font-bold text-color_preto text-2xl ml-10 mt-10">Entre em contato Conosco</h1>
-                    <div className="flex ml-16 mt-10 bg-cover mb-28">
+                    <div className="flex ml-16 mt-10 bg-cover">
                         <div className="bg-color_roxo3 p-6 pr-8 rounded-lg w-auto h-full flex flex-col drop-shadow-lg">
                             <div className="w-80 mb-4">
                                 <h1 className="font-semibold mb-2">Email:</h1>
@@ -36,7 +36,9 @@ function Contato() {
                         </div>
                     </div>
                 </div>
-                <Footer />
+                <div className="mt-auto">
+                    <Footer />
+                </div>
             </div>
         </>
     );

@@ -31,44 +31,43 @@ function Home() {
                   Notícias
                 </h2>
               </div>
-              <Carrossel/>
+              <Carrossel />
 
-              
-                <div className="grid grid-cols-2 gap-4 mt-18 items-center">
-                  {data.map((filme, index) => (
-                    <div className="card mx-5 gap-3" key={index}>
-                      <h1 className="text-xl font-medium mb-10 w-2/3">
-                        {filme.title}
-                      </h1>
-                      <img
-                        src={filme.image}
-                        alt={filme.title}
-                        className="w-2/3"
-                      />
 
-                      <div className="tag flex space-x-10 mt-2 mb-4">
-                        {filme.tags.map((tag) => (
-                          <span key={tag} className="text-color_roxo1 font-semibold">
-                            {tag}
-                          </span>
-                        ))}
-                      </div>
+              <div className="grid grid-cols-2 gap-4 mt-18 items-center">
+                {data.map((filme, index) => (
+                  <div className="card mx-5 gap-3" key={index}>
+                    <h1 className="text-xl font-medium mb-10 w-2/3">
+                      {filme.title}
+                    </h1>
+                    <img
+                      src={filme.image}
+                      alt={filme.title}
+                      className="w-2/3"
+                    />
 
-                      <div className="text text-black mb-7 text-justify w-2/3">
-                        {filme.text.map((text) => (
-                          <span key={text} className="text-color_preto text-sm">
-                            {text}
-                          </span>
-                        ))}
-                      </div>
+                    <div className="tag flex space-x-10 mt-2 mb-4">
+                      {filme.tags.map((tag) => (
+                        <span key={tag} className="text-color_roxo1 font-semibold">
+                          {tag}
+                        </span>
+                      ))}
                     </div>
-                  ))}
-                </div>
-            </div>
 
+                    <div className="text text-black mb-7 text-justify w-2/3">
+                      {filme.text.map((text) => (
+                        <span key={text} className="text-color_preto text-sm">
+                          {text}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
             <CardContato />
           </div>
-          <Footer/>
+          <Footer />
         </div>
       </main>
     </>
