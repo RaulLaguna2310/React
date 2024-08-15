@@ -9,7 +9,7 @@ function Header() {
                     <ImSearch className="absolute left-4 text-color_branco" />
                     <input
                         className="block w-80 h-12 rounded-2xl pl-12 bg-color_preto placeholder:text-color_branco placeholder:text-sm focus:outline-none"
-                        placeholder="Procure por um filme"
+                        placeholder="Digite oque deseja:"
                     />
                 </div>
             </div>
