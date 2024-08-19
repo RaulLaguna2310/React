@@ -65,7 +65,7 @@ function Contato() {
                         </div>
                     </div>
                 </div>
-                <div className="mt-60">
+                <div className="mt-auto">
                     <Footer />
                 </div>
             </div>

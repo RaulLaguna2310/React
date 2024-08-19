@@ -20,7 +20,7 @@ function Filmes() {
         <>  
         <div className="flex flex-col min-h-screen">
         <h1 className="font-bold text-color_preto text-2xl p-10">Filmes</h1>
-            <div className="listaFilmes grid grid-cols-4 ml-20">
+            <div className="listaFilmes grid grid-cols-4 ml-20 mb-14">
                 {
                     filmes.map(filme => (
                         <div className="card-filme mb-12" key={filme.id}>
