@@ -48,7 +48,7 @@ function Contato() {
                                 value={name} />
 
                                 <input className="block w-full p-2 rounded-md ml-2 bg-color_roxo1 placeholder:text-color_branco placeholder:text-sm text-color_branco focus:outline-none" 
-                                type="text" 
+                                type="email" 
                                 placeholder="Digite seu email" 
                                 onChange={(e) => setEmail(e.target.value)} 
                                 value={email} />

@@ -1,5 +1,4 @@
 import data from "../../artigos.json";
-import Carrossel from "../Componentes/Carrossel/Carrossel";
 import { Link } from "react-router-dom";
 import Carrossel_01 from "../Componentes/Carrossel_01/Carrossel_01";
 import CardContato from "../Componentes/CardContato/CardContato";
@@ -31,10 +30,8 @@ function Home() {
                   Notícias
                 </h2>
               </div>
-              <Carrossel />
 
-
-              <div className="grid grid-cols-2 gap-4 mt-18 items-center">
+              <div className="grid grid-cols-2 gap-4 mt-18 ml-12 items-center">
                 {data.map((filme, index) => (
                   <div className="card mx-5 gap-3" key={index}>
                     <h1 className="text-xl font-medium mb-10 w-2/3">
