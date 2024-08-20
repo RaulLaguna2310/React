@@ -10,7 +10,7 @@ function Home() {
       <main>
         <div className="flex flex-col">
           <div>
-            <div className="py-1 mt-10 mb-14">
+            <div className="py-1 mt-10 mb-28">
               <div className="flex flex-row ml-10">
                 <h2 className="font-bold text-color_preto text-2xl mr-4">
                   Em Cartaz
@@ -50,7 +50,6 @@ function Home() {
                         </span>
                       ))}
                     </div>
-
                     <div className="text text-black mb-7 text-justify w-2/3">
                       {filme.text.map((text) => (
                         <span key={text} className="text-color_preto text-sm">
